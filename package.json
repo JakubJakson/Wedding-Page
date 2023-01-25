@@ -1,0 +1,15 @@
+{
+  "name": "lukyjanka",
+  "version": "1.0.0",
+  "description": "Wedding_Page",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jakub Noskaj",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.2",
+    "leaflet": "^1.9.2"
+  }
+}

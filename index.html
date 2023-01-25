@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+      integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+      crossorigin=""
+    />
+    <script
+      src="https://kit.fontawesome.com/720d9813d7.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Jana&Lukáš</title>
+  </head>
+  <body>
+    <div id="main">
+      <div class="logo--container">
+        <img id="logo" class="logo" src="./IMG/logo_nove-01.png" alt="logo" />
+      </div>
+      <div class="header">
+        <nav class="nav">
+          <ul class="nav--links">
+            <li class="nav--item">
+              <a href="#section--1" class="nav--link" id="dateLink">Datum</a>
+            </li>
+            <li class="nav--item">
+              <a href="#map--section" class="nav--link" id="mapLink">Mapa</a>
+            </li>
+            <li class="nav--item">
+              <a href="#section--2" class="nav--link" id="trasportLink"
+                >Doprava</a
+              >
+            </li>
+            <li class="nav--item">
+              <a href="#program--section" class="nav--link" id="programLink"
+                >Program</a
+              >
+            </li>
+            <li class="nav--item">
+              <a href="#section--3" class="nav--link" id="dressLink"
+                >Dress Code</a
+              >
+            </li>
+            <li class="nav--item">
+              <a href="#menu" class="nav--link" id="menuLink">Menu</a>
+            </li>
+            <li class="nav--item">
+              <a href="#section--4" class="nav--link" id="darkyLink"
+                >Tip na Dárky</a
+              >
+            </li>
+            <li class="nav--item">
+              <a href="#kontakt" class="nav--link" id="kontaktLink">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="icon">
+        <i class="fa-solid fa-bars fa-xl"></i>
+      </div>
+    </div>
+
+    <section class="section" id="section--1">
+      <div
+        class="panel"
+        style="background-image: url(./IMG/9P7A4318a.jpg)"
+      ></div>
+      <div
+        class="panel"
+        style="background-image: url(./IMG/9P7A4354a.jpg)"
+      ></div>
+      <div
+        class="panel"
+        style="background-image: url(./IMG/9P7A4393a.jpg)"
+      ></div>
+    </section>
+
+    <div class="img2" id="map--section">
+      <div id="map"></div>
+    </div>
+
+    <section class="section" id="section--2">
+      <img class="attach" src="./IMG/attachment_white-01.png" alt="" />
+      <div class="section--text">
+        <span class="headline">Doprava & Ubytování <br /><br /></span>
+        <span class="subheadline"
+          >Ubytovat se můžete v nedalekém Znojmě (10 km) nebo v okolních
+          vesnicích. <br />Pokud jsme se s vámi nedomluvili jinak, zařiďte si
+          prosím ubytování sami. <br />Večerní odvoz zpět na vaše ubytování bude
+          zajištěn.</span
+        >
+      </div>
+    </section>
+
+    <div id="program--section">
+      <div class="test">
+        <h2>Program</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus
+          tempora eveniet sit quaerat voluptatem vel maiores asperiores
+          consequatur earum id! Iste repudiandae vel enim, maxime laboriosam
+          deserunt perferendis nisi et?
+        </p>
+      </div>
+    </div>
+
+    <section class="section" id="section--3">
+      <h2>Dress Code</h2>
+      <span class="circles">
+        <div class="circle circle--1"></div>
+        <div class="circle circle--2"></div>
+        <div class="circle circle--3"></div>
+        <div class="circle circle--4"></div>
+      </span>
+      <p>
+        Zde můžete vidět barvy svatby, pokud budete chtít, budeme rádi, když se
+        do nich sladíte.
+      </p>
+    </section>
+
+    <div id="menu">
+      <div class="test">
+        <h2>Menu</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+          placeat provident illum deleniti ad soluta quos earum repellendus
+          laboriosam asperiores quaerat, exercitationem aliquam consectetur odio
+          eos? Quis in perspiciatis porro! Lorem ipsum, dolor sit amet
+          consectetur adipisicing elit. Voluptatem iure eum itaque sed
+          doloremque aliquid neque tenetur, voluptas veritatis facere non,
+          beatae nisi. Magnam repudiandae quaerat doloribus dignissimos animi
+          ipsam.
+        </p>
+      </div>
+    </div>
+
+    <section class="section" id="section--4">
+      <h2>Tipy na Dárky</h2>
+      <p>Nejvíce nás potěšíte obálkou :)</p>
+    </section>
+
+    <div id="kontakt">
+      <div class="test">
+        <h2>Potvrzení Účasti</h2>
+        <p>
+          Prosím, potvrďte nám Vaši účast do 30.4.2023, <br />dejte nám vědět, i
+          když se nebudete moci zúčastnit na <br />
+          <strong>e-mail lukasajana2023@gmail.com.</strong>
+        </p>
+        <span class="outro"><h2>Děkujeme a těšíme se na vás :)</h2></span>
+      </div>
+    </div>
+
+    <section class="section" id="section--5">
+      <img class="attach" src="./IMG/attachment_white-01.png" alt="" />
+      <div class="section--text">
+        <span class="headline">Potvrzení Účasti <br /><br /></span>
+        <span class="subheadline">
+          Prosím, potvrďte nám Vaši účast do 30.4.2023, <br />dejte nám vědět, i
+          když se nebudete moci zúčastnit na <br />
+          <strong>e-mail lukasajana2023@gmail.com.</strong>
+        </span>
+        <span class="outro"><h2>Děkujeme a těšíme se na vás :)</h2></span>
+      </div>
+    </section>
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+      integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+      crossorigin=""
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
