@@ -23,25 +23,25 @@ const links = document.querySelector(".nav--links");
 const navContainer = document.querySelector(".nav--container");
 // Pop in test
 const tests = document.querySelectorAll(".test");
-const contents = document.querySelectorAll(".section--content");
+const fadeSection = document.querySelector(".fade--section");
 
 //Photo stretch
-const panels = document.querySelectorAll(".panel");
-const body = document.querySelector("body");
+// const panels = document.querySelectorAll(".panel");
+// const body = document.querySelector("body");
 
-// panel.addEventListener("click", function () {
-// });
+// // panel.addEventListener("click", function () {
+// // });
 
-panels.forEach((panel) =>
-  panel.addEventListener("click", function () {
-    removeStretch();
-    panel.classList.add("stretch");
-  })
-);
+// panels.forEach((panel) =>
+//   panel.addEventListener("click", function () {
+//     removeStretch();
+//     panel.classList.add("stretch");
+//   })
+// );
 
-const removeStretch = function () {
-  panels.forEach((panel) => panel.classList.remove("stretch"));
-};
+// const removeStretch = function () {
+//   panels.forEach((panel) => panel.classList.remove("stretch"));
+// };
 
 //Leaflet map render
 const map = L.map("map").setView([48.9137943572544, 15.98245985382479], 13);
@@ -67,38 +67,22 @@ links.addEventListener("click", function () {
 });
 
 //Section pop in
+// let triggerBottom = (window.innerHeight / 6) * 5;
 
-const triggerBottom = (window.innerHeight / 6) * 5;
+// window.addEventListener("scroll", textPop);
 
-window.addEventListener("scroll", () => {
-  textPop();
-  contentPop();
-});
+// textPop();
 
-textPop();
-contentPop();
-
-function textPop() {
-  tests.forEach((test) => {
-    const testTop = test.getBoundingClientRect().top;
-    if (testTop < triggerBottom) {
-      test.classList.add("show");
-    } else {
-      test.classList.remove("show");
-    }
-  });
-}
-
-function contentPop() {
-  contents.forEach((content) => {
-    const contentTop = content.getBoundingClientRect().top;
-    if (contentTop === triggerBottom) {
-      content.classList.add("show");
-    } else {
-      content.classList.remove("show");
-    }
-  });
-}
+// function textPop() {
+//   tests.forEach((test) => {
+//     const testTop = test.getBoundingClientRect().top;
+//     if (testTop < triggerBottom) {
+//       test.classList.add("show");
+//     } else {
+//       test.classList.remove("show");
+//     }
+//   });
+// }
 
 // // When the user scrolls the page, execute myFunction
 // window.onscroll = function () {
