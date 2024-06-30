@@ -21,27 +21,42 @@ const page1 = document.querySelector(".main--page");
 const burger = document.querySelector(".icon");
 const links = document.querySelector(".nav--links");
 const navContainer = document.querySelector(".nav--container");
-// Pop in test
-const tests = document.querySelectorAll(".test");
-const fadeSection = document.querySelector(".fade--section");
 
-//Photo stretch
-// const panels = document.querySelectorAll(".panel");
-// const body = document.querySelector("body");
+const leaf = document.querySelector(".leaf");
+const back = document.querySelector(".back");
+const nonVegan = document.querySelector(".non--vegan");
+const vegan = document.querySelector(".vegan");
 
-// // panel.addEventListener("click", function () {
-// // });
+const menuHeadline = document.querySelector(".menu--headline");
+const menuHeadlineVegan = document.querySelector(".menu--headline--vegan");
 
-// panels.forEach((panel) =>
-//   panel.addEventListener("click", function () {
-//     removeStretch();
-//     panel.classList.add("stretch");
-//   })
-// );
+const circles = document.querySelectorAll(".circle");
 
-// const removeStretch = function () {
-//   panels.forEach((panel) => panel.classList.remove("stretch"));
-// };
+circles.forEach((circle) => {
+  circle.addEventListener("mouseenter", function () {
+    circle.style.transform = "translateY(-20px)";
+  });
+  circle.addEventListener("mouseleave", function () {
+    circle.style.transform = "translateY(0)";
+  });
+});
+
+// Menu switch
+menuHeadlineVegan.addEventListener("click", function () {
+  nonVegan.style.opacity = "0";
+  nonVegan.style.pointerEvents = "none";
+  vegan.style.opacity = "1";
+  menuHeadlineVegan.style.opacity = "1";
+  menuHeadline.style.opacity = "0.5";
+});
+
+menuHeadline.addEventListener("click", function () {
+  vegan.style.opacity = "0";
+  vegan.style.pointerEvents = "none";
+  nonVegan.style.opacity = "1";
+  menuHeadlineVegan.style.opacity = "0.5";
+  menuHeadline.style.opacity = "1";
+});
 
 //Leaflet map render
 const map = L.map("map").setView([48.9137943572544, 15.98245985382479], 13);
@@ -65,38 +80,3 @@ links.addEventListener("click", function () {
   links.classList.remove("hider");
   logo.classList.remove("bg--hider");
 });
-
-//Section pop in
-// let triggerBottom = (window.innerHeight / 6) * 5;
-
-// window.addEventListener("scroll", textPop);
-
-// textPop();
-
-// function textPop() {
-//   tests.forEach((test) => {
-//     const testTop = test.getBoundingClientRect().top;
-//     if (testTop < triggerBottom) {
-//       test.classList.add("show");
-//     } else {
-//       test.classList.remove("show");
-//     }
-//   });
-// }
-
-// // When the user scrolls the page, execute myFunction
-// window.onscroll = function () {
-//   myFunction();
-// };
-
-// // Get the offset position of the navbar
-// const sticky = section1.offsetTop;
-
-// // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-// function myFunction() {
-//   if (window.pageYOffset >= sticky) {
-//     navContainer.classList.add("sticky");
-//   } else {
-//     navContainer.classList.remove("sticky");
-//   }
-// }
